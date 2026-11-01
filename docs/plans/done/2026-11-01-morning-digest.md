@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+closed: 2026-11-01
 ---
 
 # Morning digest
@@ -77,3 +78,19 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issues
+
+| # | Issue | Blocked by | Worker | Closed |
+|---|-------|-----------|--------|--------|
+| 1 | Digest types: `src/digest/types.ts` | — | omp · openrouter/mistralai/mistral-large-4-0 · high | 2026-11-01 |
+| 2 | Run log reader: `readNight` + reader tests | #1 | omp · openrouter/mistralai/mistral-large-4-0 · high | 2026-11-01 |
+| 3 | Digest page: `GET /digest/:night` | #1 | omp · openrouter/mistralai/mistral-large-4-0 · high | 2026-11-01 |
+| 4 | Digest JSON: `GET /api/digest/:night` | #1 | omp · mistral-large-4-0 · high | 2026-11-01 |
+| 5 | Board links each night to its digest | #1 | omp · openrouter/mistralai/mistral-large-4-0 · high | 2026-11-01 |
+| 6 | Route tests for /digest/:night and /api/digest/:night | #1 | omp · openrouter/mistralai/mistral-large-4-0 · high | 2026-11-01 |
+| 7 | Preview for review: public HTML copy of /digest/2026-10-28 | #2–#6 | omp · openrouter/mistralai/mistral-large-4-0 · high | 2026-11-01 |
+| 8 | Clean up: marker off the preview link, plan moved to done | #7 | omp · openrouter/mistralai/mistral-large-4-0 · high | 2026-11-01 |
+
+Preview link: https://bumshakalaka.github.io/rig-handover-preview/ — uploaded with the lane marker
+for review, then re-uploaded with `LANE_MARKER` unset (ADR 0003); the link now reads "no marker set".
