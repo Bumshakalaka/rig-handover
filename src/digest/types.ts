@@ -17,5 +17,4 @@ export type DigestRow = {
   badLines: number;
 };
 
-// Signature only; the reader itself lands with issue #2 (src/digest/reader.ts).
-export declare function readNight(runsDir: string, night: string): DigestRow[];
+// readNight(runsDir, night) is implemented in ./reader.ts.
